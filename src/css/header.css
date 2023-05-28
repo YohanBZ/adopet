@@ -1,0 +1,103 @@
+header{
+  width: 100%;
+  max-width: 1300px;
+  min-height: 5rem;
+  padding: 0.62em 1.25em ; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 2px solid var(--primaria);
+}
+
+.logo-header, nav, .menu{
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 52px;
+  height: 52px;
+  transform: rotateY(180deg);
+}
+
+.logo-write {
+  text-decoration: none;
+  padding: 0.1em;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 3.25em;
+  color: var(--primaria);
+}
+
+.menu{
+  list-style: none;
+  padding: 0 1em;
+  gap:40px;
+}
+
+.menu-links{ 
+  text-decoration: none;
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 1.25em;
+  color: var(--primaria);
+  border-bottom: 2px solid var(--primaria);
+}
+
+.menu-links:hover{
+  font-size: 1.50em;
+}
+
+
+/* CSS media query do header  */
+
+@media screen and (max-width: 768px){
+  .logo-img{
+    width: 32px;
+    height: 32px;
+  }
+  .logo-write{
+    font-size: 2.25em;
+  }
+  .menu{
+    gap:20px;
+  }
+  .menu-links{
+    font-size: 1em;
+  }
+  .menu-links:hover{
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 480px){
+  header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .menu{
+    gap:30px;
+  }
+  .menu-links{
+    font-size: 1.25em;
+  }
+  .menu-links:hover{
+    font-size: 1.45em;
+  }
+}
+
+@media screen and (max-width: 325px){
+  header{
+    padding: 0 0 1rem 0 ;
+  }
+  .menu{
+    flex-direction: column;
+    padding: 0;
+  }
+  .menu > li{
+    width: 100vw;
+    text-align: center;
+    border-bottom: 2px solid var(--primaria);
+  }
+}
