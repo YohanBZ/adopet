@@ -7,7 +7,9 @@ header{
   flex-wrap: wrap;
   justify-content: space-between;
   position: fixed;
-  border-bottom: 2px solid var(--primaria);
+  background: var(--base);
+  border: 2px solid var(--primaria);
+  border-radius: 6px;
 }
 
 .logo-header, nav, .menu{
